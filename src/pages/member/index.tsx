@@ -38,13 +38,11 @@ const Member: React.FC = () => {
           成员风采
         </Link>
       </div>
-      {/* <div className="memberList"> */}
       <Switch>
         <Route path={`${path}/graduate`} component={Graduate} />
         <Route path={`${path}/memberstyle`} component={MemberStyle} />
         <Redirect to="/member/graduate" />
       </Switch>
-      {/* </div> */}
     </div>
   )
 }

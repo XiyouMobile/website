@@ -48,32 +48,30 @@ const About: FC<{ text: string; picture_url: string; reverse: boolean; title: st
   )
 }
 
-function AboutUs() {
-  return (
-    <div className="about-us">
-      <Row className="about-us-band">
-        <Col span={6} offset={4}>
-          <h1>移动应用开发</h1>
-          <h1>实验室</h1>
-          <h2>移动应用开发实验室，强的很</h2>
-          <h2>移动应用开发实验室，强的很</h2>
-          <h2>移动应用开发实验室，强的很</h2>
-          <h2>移动应用开发实验室，强的很</h2>
-        </Col>
-        <Col span={14} />
-      </Row>
-      <Row className="about-us-summary">
-        <Col span={16} offset={4}>
-          <Summary summary={summary} />
-        </Col>
-      </Row>
-      <div className="about-us-body">
-        {Object.entries(Introduction).map(([s, v], i) => (
-          <About key={s} reverse={i % 2 == 0} {...v} title={s} />
-        ))}
-      </div>
+const AboutUs: FC = () => (
+  <div className="about-us">
+    <Row className="about-us-band">
+      <Col span={12} offset={4}>
+        <h1>移动应用开发</h1>
+        <h1>实验室</h1>
+        <h2>移动应用开发实验室，强的很</h2>
+        <h2>移动应用开发实验室，强的很</h2>
+        <h2>移动应用开发实验室，强的很</h2>
+        <h2>移动应用开发实验室，强的很</h2>
+      </Col>
+      <Col span={14} />
+    </Row>
+    <Row className="about-us-summary">
+      <Col span={16} offset={4}>
+        <Summary summary={summary} />
+      </Col>
+    </Row>
+    <div className="about-us-body">
+      {Object.entries(Introduction).map(([s, v], i) => (
+        <About key={s} reverse={i % 2 == 0} {...v} title={s} />
+      ))}
     </div>
-  )
-}
+  </div>
+)
 
 export default AboutUs

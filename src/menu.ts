@@ -6,7 +6,7 @@ import Activity from './pages/activity'
 import ActivityDetail from './pages/activity-detail'
 import WikiDetail from './pages/wiki-detail'
 import UserDetail from './pages/user-detail'
-// import AboutUs from './pages/about-us'
+import AboutUs from './pages/about-us'
 
 export const menu = [
   {
@@ -35,12 +35,12 @@ export const menu = [
     component: Member,
     exact: false
   },
-  // {
-  //   key: 'aboutUs',
-  //   path: '/about',
-  //   title: '关于我们',
-  //   component: AboutUs
-  // },
+  {
+    key: 'aboutUs',
+    path: '/about',
+    title: '关于我们',
+    component: AboutUs
+  },
   {
     key: 'join',
     path: '/join',
@@ -64,7 +64,7 @@ export const menu = [
   },
   {
     key: 'UserDetail',
-    path: '/user-detail/:id',
+    path: '/user-detail/:userName',
     title: '用户详细页面',
     component: UserDetail,
     notInMenu: true
