@@ -6,10 +6,10 @@ const Member: React.FC = () => {
   const [state, setState] = React.useState(0)
   const [group, setGroup] = React.useState('Android')
   const groupList = [
-    {id: 'Android', index: 0},
-    {id: 'iOS', index: 1},
-    {id: 'Web', index: 2},
-    {id: 'Server', index: 3}
+    { id: 'Android', index: 0 },
+    { id: 'iOS', index: 1 },
+    { id: 'Web', index: 2 },
+    { id: 'Server', index: 3 }
   ]
   return (
     <div className="groupBox">
