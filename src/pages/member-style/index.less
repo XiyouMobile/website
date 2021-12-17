@@ -1,0 +1,38 @@
+.groupBox {
+  display: flex;
+  margin: 0 auto;
+  .groupBoxIn {
+    border-radius: 25px;
+    margin: 0 auto;
+    width: 80%;
+    background-color: rgb(245, 245, 245);
+    .group-mess {
+      margin: 2% 47%;
+      display: flex;
+      width: 50%;
+      height: 40px;
+      font-size: 20px;
+      border-radius: 25px;
+      position: relative;
+      border: 1px solid #2e6acc;
+      box-shadow: 1px 1px 10px #9bb5df;
+      .group-per {
+        flex: 1;
+        text-align: center;
+        line-height: 40px;
+      }
+      .group-per:hover {
+        background-color: #2e6acc;
+        border-radius: 25px;
+        color: white;
+        transition: linear 0.5s;
+        box-shadow: 1px 3px 13px #2e6acc;
+      }
+    }
+    .group-member {
+      margin: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

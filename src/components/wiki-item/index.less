@@ -1,0 +1,175 @@
+@import '../../common/theme.less';
+.item-wrapper {
+  background-color: #fff;
+  margin: 10px 20px;
+  overflow: hidden;
+  transition: ease all 0.3s;
+  width: 25rem;
+  overflow: hidden;
+  position: relative;
+  .item-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.6) 100%);
+  }
+  .item-info {
+    position: relative;
+    top: 60%;
+    padding: 0 20px;
+    height: 100%;
+    transition: all 0.3s;
+  }
+  .item-content:hover {
+    background: rgba(0, 0, 0, 0.6);
+  }
+  .item-content:hover .item-info {
+    transition: all 0.3s;
+    top: 0;
+  }
+  .item-time {
+    color: @text-secondary;
+    font-size: 12px;
+  }
+  .item-title {
+    overflow: hidden;
+    box-sizing: content-box;
+    font-size: 16px;
+    color: white;
+    padding-top: 20%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    height: 75px;
+    line-height: 25px;
+  }
+  .item-bottom {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    width: calc(100% - 40px);
+    justify-content: space-between;
+    align-items: center;
+    .item-user {
+      flex: 1;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .name {
+        color: white;
+      }
+      .group {
+        display: inline-block;
+        width: 60px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.3);
+        color: white;
+      }
+    }
+    .views {
+      color: white;
+      font-size: 12px;
+      margin-right: 15px;
+    }
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.2s;
+  }
+}
+.animate {
+  animation-duration: 0.75s;
+  animation-duration: 0.5s;
+  animation-delay: 0.2s;
+  animation-name: animate-fade;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  animation-fill-mode: backwards;
+}
+.animate.blur {
+  animation-name: animate-blur;
+  animation-timing-function: ease;
+}
+@keyframes animate-blur {
+  0% {
+    opacity: 0;
+    filter: blur(15px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+.wiki-item-wrapper {
+  position: relative;
+  transition: ease all 0.3s;
+  margin: 20px 10px;
+  background-color: #fafafa;
+  height: 22rem;
+  border-radius: 4px;
+  overflow: hidden;
+  img {
+    height: 16rem;
+    width: 25rem;
+    object-fit: cover;
+    transition: transform 0.2s;
+  }
+  .bar {
+    position: absolute;
+    top: 13rem;
+    left: 0;
+    width: 25rem;
+    height: 3rem;
+    line-height: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.4) 100%);
+    font-size: 14px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    .views_text,
+    .date_text {
+      margin-left: 10px;
+    }
+  }
+  .item-content {
+    padding: 10px;
+    width: 25rem;
+    .item-title {
+      font-size: 18px;
+      color: #000;
+      line-height: 20px;
+      display: -webkit-box;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .item-user:hover {
+      color: @primary-color;
+    }
+    .item-user {
+      position: absolute;
+      bottom: 10px;
+      color: #1890ff;
+      height: 20px;
+      .group {
+        background-color: #e5efff;
+        color: @primary-color;
+        display: inline-block;
+        width: 50px;
+        text-align: center;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.wiki-item-wrapper:hover {
+  box-shadow: 1;
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}

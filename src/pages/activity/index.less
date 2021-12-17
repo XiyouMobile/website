@@ -1,0 +1,53 @@
+.activity {
+  .activity-header {
+    position: relative;
+    background-image: url('http://localhost:3000/src/assest/images/activity.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40rem;
+    user-select: none;
+    .mask {
+      position: absolute;
+      inset: 0px;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    .title {
+      color: #fff;
+      position: relative;
+      top: 10rem;
+      left: 10rem;
+      font-size: 5rem;
+    }
+    .describe {
+      color: #fff;
+      position: relative;
+      margin-bottom: 10px;
+      top: 10rem;
+      left: 10rem;
+      font-size: 30px;
+    }
+  }
+  .activity-body {
+    width: 75%;
+    max-width: 1100px;
+    margin: 50px auto 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .activity-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    li {
+      font-size: 18px !important;
+      border: none;
+    }
+    button {
+      font-size: 18px !important;
+      border: none;
+    }
+  }
+}

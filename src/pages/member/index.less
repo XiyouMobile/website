@@ -1,0 +1,69 @@
+.wrapper-max {
+  .member-header {
+    position: relative;
+    background-image: url('http://localhost:3000/src/assest/images/member.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40rem;
+    user-select: none;
+    .mask {
+      position: absolute;
+      inset: 0px;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    .title {
+      color: #fff;
+      position: relative;
+      top: 10rem;
+      left: 10rem;
+      font-size: 5rem;
+    }
+    .describe {
+      color: #fff;
+      position: relative;
+      margin-bottom: 10px;
+      top: 10rem;
+      left: 10rem;
+      font-size: 30px;
+    }
+  }
+  .member-router {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    .member-item {
+      font-size: 18px;
+      margin: 0 20px;
+      color: black;
+    }
+    .memberClick {
+      font-size: 18px;
+      margin: 0 20px;
+      color: #2e6acc;
+    }
+    .member-item::after {
+      content: '';
+      display: block;
+      border-bottom: 3px solid #2e6acc;
+      transform: scale(0.01, 1);
+      transform-origin: 50% 0%;
+      opacity: 0;
+      transition: all 0.01s;
+    }
+    // .member-item:hover::after {
+    //   transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+    //   transform: scale(1, 1);
+    //   opacity: 1;
+    // }
+    .memberClick::after {
+      content: '';
+      display: block;
+      border-bottom: 3px solid #2e6acc;
+    }
+  }
+  .memberList {
+    width: 100%;
+  }
+}

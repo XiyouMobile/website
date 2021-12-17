@@ -1,0 +1,64 @@
+.wiki {
+  .wiki-header {
+    position: relative;
+    background-image: url('https://mobile.xupt.edu.cn/my/f45af8c8bae63f074608610e5cfbabf1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40rem;
+    user-select: none;
+    .mask {
+      position: absolute;
+      inset: 0px;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    .wiki-title {
+      color: #fff;
+      position: relative;
+      top: 10rem;
+      left: 10rem;
+      font-size: 5rem;
+    }
+    .wiki-describe {
+      color: #fff;
+      position: relative;
+      margin-bottom: 10px;
+      top: 10rem;
+      left: 10rem;
+      font-size: 30px;
+    }
+  }
+  .wiki-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+    & > .title {
+      font-size: 1.5rem;
+      margin: 20px 0;
+    }
+    .wiki-select {
+      margin: 1rem 0 0;
+      .ant-menu {
+        font-size: 20px !important;
+        border-bottom: none;
+      }
+    }
+    .wiki-bottom {
+      li {
+        font-size: 18px !important;
+        border: none;
+      }
+      button {
+        font-size: 18px !important;
+        border: none;
+      }
+    }
+  }
+  .list-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+}
