@@ -15,6 +15,5 @@ module.exports = {
   insertPragma: false,
   proseWrap: 'preserve',
   htmlWhitespaceSensitivity: 'css',
-  endOfLine: 'lf',
-  bracketSpacing: true
+  endOfLine: 'lf'
 }
