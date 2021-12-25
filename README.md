@@ -1,6 +1,33 @@
 # xiyouMobile Website
 
-## 使用工具
+## 开发方式
+
+```bash
+git clone git@github.com:XiyouMobile/website.git
+
+cd website
+
+// 建议使用 pnpm 作为包管理器 若没有请执行 npm i pnpm -g
+pnpm i
+
+pnpm run dev
+```
+
+### ❗️ 注意
+
+为了安全起见，项目中的 `api` 相关文件未对外暴露，以 submodule 的形式放在了 `src/api` 目录下。
+
+真正的文件为 private 库。
+所以在开发前需要将子模块也下载
+
+```bash
+git submodule init
+git submodule update
+```
+
+更多关于 git 子模块的相关执行有兴趣可以看这里 => [git 子模块](https://unsplash.com/s/photos/programming)
+
+## 使用主要 library 版本
 
 - React ^17.x.x
 - vite ^2.x.x
@@ -47,11 +74,43 @@ src
 
 ```
 
-##
-
 ## 开发规范
 
 ### 命名
+
+#### 变量和函数命名
+
+所有的变量和函数均遵循驼峰式命名
+
+```bash
+
+// bad
+const user_name = 'xxx'
+
+// bad
+const username = 'xxx'
+
+// good
+const userName = 'xxx'
+
+// bad
+const get_user_name = (user_id) => get_user_name_by_user_id(user_id)
+
+// good
+const getUserName = (userId) => getUserNameByUserId(userId)
+```
+
+#### jsx 中 css 命名
+
+```jsx
+// bad
+<div class="contentWrapper"></div>
+
+// bad
+<div class="content-rapper"></div>
+```
+
+#### 文件和文件夹命名
 
 文件命和文件夹名不允许出现大写
 
@@ -68,5 +127,5 @@ hello-world
 
 ### commit 规范
 
-commit 进行了基本的检查配置
-建议使用 `npm run commit` 进行提交
+- commit 进行了基本的检查配置
+- 建议使用 `npm run commit` 进行提交
