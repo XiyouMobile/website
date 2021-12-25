@@ -4,8 +4,8 @@ import { BackTop } from 'antd'
 import { VerticalAlignTopOutlined } from '@ant-design/icons'
 import { menu } from '@/menu'
 import Header from '../header'
-import './index.less'
 import Footer from '../footer'
+import './index.less'
 
 // 页面布局
 const Layout: React.FC = () => (
