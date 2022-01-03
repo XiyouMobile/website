@@ -25,7 +25,7 @@ git submodule init
 git submodule update
 ```
 
-更多关于 git 子模块的相关执行有兴趣可以看这里 => [git 子模块](https://unsplash.com/s/photos/programming)
+更多关于 git 子模块的相关执行有兴趣可以看这里 => [git 子模块](https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97)
 
 ## 使用主要 library 版本
 
