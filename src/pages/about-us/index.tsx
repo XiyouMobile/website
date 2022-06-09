@@ -68,7 +68,7 @@ const AboutUs: FC = () => (
     </Row>
     <div className="about-us-body">
       {Object.entries(Introduction).map(([s, v], i) => (
-        <About key={s} reverse={i % 2 == 0} {...v} title={s} />
+        <About key={s} reverse={i % 2 === 0} {...v} title={s} />
       ))}
     </div>
   </div>

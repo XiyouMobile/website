@@ -20,14 +20,14 @@ export const groupTypeMapWikTagColor = new Map([
 const dir = 'src/common/pictures/'
 export const Introduction = {
   Android组: {
-    picture_url: `${dir}android.jpg`,
+    picture_url: 'https://mobile.xupt.edu.cn/src/images/logo_Android.jpg',
     text:
       'Android组，是实验室中历史最为悠久，规模较大的一组。 在2012年就被谷歌授予“Google中国大学合作部——Android人才培养示范基地”。' +
       '在进10年的发展下，已经形成了自己独特的科学的学习方式，往届的学长、学姐通过在Android组的学习都拿到了很好的offer。' +
       '利用Android系统的开放性，Android组进行了各式各样的移动应用开发，多次参加各种大赛，取得了不错的成绩。'
   },
   IOS组: {
-    picture_url: `${dir}ios1.jpg`,
+    picture_url: 'https://mobile.xupt.edu.cn/src/images/logo_iOS.jpg',
     text:
       '实验室的iOS组已经成为了 iOS Club ，是一个跨越专业与课堂的 iOS 开发爱好者社团Apple 唯一官方认证的大学生iOS开发俱乐部。' +
       '实验室和 Apple 公司的合作下帮助同学们快速验证学生的想法，同时也进⼀步培养了学生的创新能力和实践能力，' +
@@ -40,7 +40,7 @@ export const Introduction = {
       '用双手创造多彩的Web世界。在实验室每届学长，学姐的带领下，小组的成员都获得了较好的Offer。'
   },
   Server组: {
-    picture_url: `${dir}java.jpg`,
+    picture_url: 'https://unsplash.com/photos/9drS5E_Rguc',
     text:
       'Server组，是实验室学习氛围非常好的一组。作为后端开发的同学，掌握的是一个程序的命脉，' +
       '任何网站、APP、游戏都基于一个健壮的后端。在学长学姐的带领下，我们有清晰的项目架构，不仅满足于实现基本的功能、' +
