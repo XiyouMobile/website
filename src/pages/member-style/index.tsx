@@ -1,15 +1,16 @@
 import * as React from 'react'
+import { TeamNameEnum } from '@/common/inteface'
 import Group from '../group/index'
 import './index.less'
 
 const Member: React.FC = () => {
   const [state, setState] = React.useState(0)
-  const [group, setGroup] = React.useState('Android')
-  const groupList = [
-    { id: 'Android', index: 0 },
-    { id: 'iOS', index: 1 },
-    { id: 'Web', index: 2 },
-    { id: 'Server', index: 3 }
+  const [group, setGroup] = React.useState<TeamNameEnum>(TeamNameEnum.Android)
+  const groupList: { id: TeamNameEnum; index: number }[] = [
+    { id: TeamNameEnum.Android, index: 0 },
+    { id: TeamNameEnum.iOS, index: 1 },
+    { id: TeamNameEnum.Web, index: 2 },
+    { id: TeamNameEnum.Server, index: 3 }
   ]
   return (
     <div className="groupBox">
@@ -34,7 +35,7 @@ const Member: React.FC = () => {
           ))}
         </div>
         <div className="group-member">
-          <Group teamName={group} clicked={group} />
+          <Group teamName={group} />
         </div>
       </div>
     </div>

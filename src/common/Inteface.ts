@@ -9,8 +9,8 @@ export interface IPageInfo {
 }
 
 export enum TeamNameEnum {
-  iOS,
-  Android,
-  Web,
-  Server
+  iOS = 'iOS',
+  Android = 'Android',
+  Web = 'Web',
+  Server = 'Server'
 }

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { filter } from 'remeda'
 import useControlHeader from '@/hooks/useScroll'
 import { menu } from '@/menu'
@@ -16,8 +16,6 @@ interface Menu {
 
 const Header: React.FC = () => {
   const realMenu: Menu[] = filter((menuItem: Menu) => !menuItem.notInMenu)(menu)
-  const location = useLocation()
-  const res = realMenu.find((item) => item.path === location.pathname)?.opacity
   const { hidden, scrollerHeight, opacity, setOpacity } = useControlHeader(true)
   return (
     <header

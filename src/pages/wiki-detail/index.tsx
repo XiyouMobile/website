@@ -7,7 +7,7 @@ import { groupTypeMapWikTagColor } from '@/common/constant'
 import './index.less'
 
 const WikiDetail: React.FC = () => {
-  const params = useParams()
+  const params: { id: string } = useParams()
   const [data, setData] = React.useState<IWikiDetail>()
   React.useEffect(() => {
     if (params.id) {

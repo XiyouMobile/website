@@ -7,15 +7,17 @@ import randomArr from '@/common/utils/random-array'
 
 // 毕业生成员
 const Year: React.FC<{ clicked: number }> = (props) => {
-  const [list, setList] = React.useState<GraduateMemberInfo[]>([])
   const { clicked } = props
+  const [list, setList] = React.useState<GraduateMemberInfo[]>([])
+
   React.useEffect(() => {
     getGraduateMemberInfo({ size: 100, year: `${clicked}` }).then((res) => {
       if (res) {
         setList(randomArr(res.dataList || []))
       }
     })
-  }, [props])
+  }, [clicked])
+
   return (
     <div className="graduateMess">
       {list.map((item) => {
