@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { getgraduateGrades, getGraduateMemberInfo } from '@/api/member'
+import { getGraduateMemberInfo } from '@/api/member'
 import Year from '../year/index'
 import './index.less'
 
