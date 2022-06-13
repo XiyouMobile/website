@@ -17,30 +17,29 @@ export const groupTypeMapWikTagColor = new Map([
   ['Windows', 'blue']
 ])
 
-const dir = 'src/common/pictures/'
 export const Introduction = {
   Android组: {
-    picture_url: 'https://mobile.xupt.edu.cn/src/images/logo_Android.jpg',
+    picture_url: 'https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
     text:
       'Android组，是实验室中历史最为悠久，规模较大的一组。 在2012年就被谷歌授予“Google中国大学合作部——Android人才培养示范基地”。' +
       '在进10年的发展下，已经形成了自己独特的科学的学习方式，往届的学长、学姐通过在Android组的学习都拿到了很好的offer。' +
       '利用Android系统的开放性，Android组进行了各式各样的移动应用开发，多次参加各种大赛，取得了不错的成绩。'
   },
   IOS组: {
-    picture_url: 'https://mobile.xupt.edu.cn/src/images/logo_iOS.jpg',
+    picture_url: 'https://images.unsplash.com/photo-1585184394271-4c0a47dc59c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80',
     text:
       '实验室的iOS组已经成为了 iOS Club ，是一个跨越专业与课堂的 iOS 开发爱好者社团Apple 唯一官方认证的大学生iOS开发俱乐部。' +
       '实验室和 Apple 公司的合作下帮助同学们快速验证学生的想法，同时也进⼀步培养了学生的创新能力和实践能力，' +
       'iOS组同学也可以和众多国外优秀开发者接触并沟通交流，开阔国际视野和眼界格局，掌握国际移动应用软件开发的趋势和动态。'
   },
   Web组: {
-    picture_url: 'https://mobile.xupt.edu.cn/src/images/logo_web.jpg',
+    picture_url: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1772&q=80',
     text:
       'Web组，是实验室的后起之秀，充满活力，用青春挑战Web的世界。我们致力于以HTML/HTML5、CSS/CSS3、Javascript为主的Web前端开发，' +
       '用双手创造多彩的Web世界。在实验室每届学长，学姐的带领下，小组的成员都获得了较好的Offer。'
   },
   Server组: {
-    picture_url: 'https://unsplash.com/photos/9drS5E_Rguc',
+    picture_url: 'https://images.unsplash.com/photo-1571786256017-aee7a0c009b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80',
     text:
       'Server组，是实验室学习氛围非常好的一组。作为后端开发的同学，掌握的是一个程序的命脉，' +
       '任何网站、APP、游戏都基于一个健壮的后端。在学长学姐的带领下，我们有清晰的项目架构，不仅满足于实现基本的功能、' +
