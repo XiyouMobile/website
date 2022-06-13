@@ -3,13 +3,14 @@ import { getGraduateMemberInfo } from '@api/member'
 import { GraduateMemberInfo } from '@api/member/interface'
 import './index.less'
 import { Link } from 'react-router-dom'
+import { useAutoAnimate } from '@formkit/auto-animate/react'
 import randomArr from '@/common/utils/random-array'
 
 // 毕业生成员
 const Year: React.FC<{ clicked: number }> = (props) => {
   const { clicked } = props
   const [list, setList] = React.useState<GraduateMemberInfo[]>([])
-
+  const [parent] = useAutoAnimate(/* optional config */) as any
   React.useEffect(() => {
     getGraduateMemberInfo({ size: 100, year: `${clicked}` }).then((res) => {
       if (res) {
@@ -19,7 +20,7 @@ const Year: React.FC<{ clicked: number }> = (props) => {
   }, [clicked])
 
   return (
-    <div className="graduateMess">
+    <div className="graduateMess" ref={parent}>
       {list.map((item) => {
         const { name, graduateImg, company, username } = item
         return (

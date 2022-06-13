@@ -1,11 +1,13 @@
 import * as React from 'react'
 import { TeamNameEnum } from '@/common/inteface'
 import Group from '../group/index'
+import { useAutoAnimate } from '@formkit/auto-animate/react'
 import './index.less'
 
 const Member: React.FC = () => {
   const [state, setState] = React.useState(0)
   const [group, setGroup] = React.useState<TeamNameEnum>(TeamNameEnum.Android)
+  const [parent] = useAutoAnimate(/* optional config */) as any
   const groupList: { id: TeamNameEnum; index: number }[] = [
     { id: TeamNameEnum.Android, index: 0 },
     { id: TeamNameEnum.iOS, index: 1 },
@@ -15,7 +17,7 @@ const Member: React.FC = () => {
   return (
     <div className="groupBox">
       <div className="groupBoxIn">
-        <div className="group-mess">
+        <div className="group-mess" ref={parent}>
           {groupList.map((item) => (
             <div
               key={item.id}

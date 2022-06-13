@@ -4,6 +4,7 @@ import { getMemberInfo } from '@/api/member'
 import { MemberInfo } from '@/api/member/interface'
 import { TeamNameEnum } from '@/common/inteface'
 import randomArr from '@/common/utils/random-array'
+import { useAutoAnimate } from '@formkit/auto-animate/react'
 import './index.less'
 
 type GroupProps = {
@@ -14,7 +15,7 @@ type GroupProps = {
 const Group: React.FC<GroupProps> = (props) => {
   const { teamName } = props
   const [list, setList] = React.useState<MemberInfo[]>([])
-
+  const [parent] = useAutoAnimate(/* optional config */) as any
   React.useEffect(() => {
     getMemberInfo({ size: 100, team: teamName }).then((res) => {
       if (res) {
@@ -23,7 +24,7 @@ const Group: React.FC<GroupProps> = (props) => {
     })
   }, [props])
   return (
-    <div className="group-member">
+    <div className="group-member" ref={parent}>
       {list.map((item) => {
         const { name, team, mienImg, username } = item
         return (
