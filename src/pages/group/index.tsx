@@ -15,7 +15,7 @@ type GroupProps = {
 const Group: React.FC<GroupProps> = (props) => {
   const { teamName } = props
   const [list, setList] = React.useState<MemberInfo[]>([])
-  const [parent] = useAutoAnimate(/* optional config */) as any
+  const [parent] = useAutoAnimate() as any
   React.useEffect(() => {
     getMemberInfo({ size: 100, team: teamName }).then((res) => {
       if (res) {

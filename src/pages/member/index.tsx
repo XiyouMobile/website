@@ -6,8 +6,14 @@ import './index.less'
 
 const Member: React.FC = () => {
   const { path, url } = useRouteMatch()
-  const [state, setState] = React.useState(0)
-
+  const [state, setState] = React.useState(() => {
+    const pathname = window.location.pathname
+    if (pathname === '/member/graduate' || pathname === '/member') {
+      return 0
+    } else {
+      return 1
+    }
+  })
   return (
     <div className="wrapper-max">
       <div className="member-header">

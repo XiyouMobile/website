@@ -10,7 +10,7 @@ import randomArr from '@/common/utils/random-array'
 const Year: React.FC<{ clicked: number }> = (props) => {
   const { clicked } = props
   const [list, setList] = React.useState<GraduateMemberInfo[]>([])
-  const [parent] = useAutoAnimate(/* optional config */) as any
+  const [parent] = useAutoAnimate() as any
   React.useEffect(() => {
     getGraduateMemberInfo({ size: 100, year: `${clicked}` }).then((res) => {
       if (res) {

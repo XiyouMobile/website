@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { getGraduateMemberInfo } from '@/api/member'
-import Year from '../year/index'
+import Year from '../year'
 import './index.less'
 
 // 成员
