@@ -8,7 +8,7 @@ const Member: React.FC = () => {
   const { path, url } = useRouteMatch()
   const [state, setState] = React.useState(() => {
     const pathname = window.location.pathname
-    if (pathname === '/member/graduate') {
+    if (pathname === '/member/graduate' || pathname === '/member') {
       return 0
     } else {
       return 1
